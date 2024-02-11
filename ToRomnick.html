@@ -7,21 +7,7 @@
 		<script type="text/javascript">
 
 			function yesClicked() {
-				var name = "Romnick J. Arellano";
-				var email = "davidnorthrup824@gmail.com";
-				var message = "I said YES!";
-				
-				var data = new FormData();
-				data.append('name', name);
-				data.append('email', email);
-				data.append('message', message);
-				
-				var xhr = new XMLHttpRequest();
-				xhr.open('POST', 'send_email.php'); // Replace 'send_email.php' with the path to your server-side script
-				xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
-				
-				xhr.send(data);
-				
+				document.write('<title>Romnick said Yes!</title>');
 				document.write('\
 					<style>\
   						footer {\
